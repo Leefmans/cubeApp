@@ -1,0 +1,718 @@
+html {
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+  width: 700px;
+  height: 500px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 28px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent; 
+  border-radius: 14px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green; 
+  border-radius: 14px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgreen; 
+}
+
+div.loading {
+  visibility: visible;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  z-index: 100;
+  background-color: black;
+  border: 10px solid green;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+}
+
+#press-start {
+  position: absolute;
+  font-size: 60px;
+  top: 60%;
+  left: 25%;
+  right: 25%;
+  background-color: black;
+  color: white;
+  border: 10px solid green;
+  border-radius: 16px;
+}
+
+div.home {
+  visibility: hidden;
+  z-index: 0;
+}
+
+div.clicking-area {
+  border: 8px solid darkgreen;
+  border-radius: 32px;
+  position: absolute;
+  left: 1%;
+  right: 45%;
+  top: 1%;
+  bottom: 39.6%;
+}
+
+#money-count {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  text-align: center;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 70%;
+  padding: 0px;
+  font-size: 40px;
+  margin: 5px;
+}
+
+#click-button {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  left: 5%;
+  bottom: 5%;
+  font-size: 40px;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+div.clickCountSection {
+  border: 8px solid darkgreen;
+  border-radius: 32px;
+  position: absolute;
+  left: 56%;
+  right: 1%;
+  top: 1%;
+  bottom: 69.3%;
+}
+
+#clickCountInfo {
+  text-align: center;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 37px;
+  padding: 3px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 50%;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+#clickCount {
+  text-align: center;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 50%;
+  bottom: 0%;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+div.upgrade-token-section {
+  border: 8px solid darkgreen;
+  border-radius: 32px;
+  position: absolute;
+  left: 56%;
+  right: 1%;
+  top: 30.7%;
+  bottom: 39.6%;
+  margin: 2px;
+  visibility: hidden;
+}
+
+#tokenInfo {
+  text-align: center;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 29px;
+  padding: 7px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 50%;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+#tokenCount {
+  text-align: center;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 50%;
+  bottom: 0%;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+#upgrades-menu-button {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px;
+  text-align: center;
+  font-size: 35px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 65%;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+#monkey-town-button {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px;
+  text-align: center;
+  font-size: 35px;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+  right: 35%;
+  background-color: lightgreen;
+  border: 5px solid green;
+  border-radius: 16px;
+  opacity: 0.5;
+  margin: 5px;
+}
+
+div.upgrades-screen {
+  background-color: black;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
+  z-index: 1;
+  border: 10px solid green;
+  border-radius: 32px;
+  visibility: hidden;
+}
+
+div.monkey-town {
+  background-color: black;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  z-index: 1;
+  border: 0px;
+  border-radius: 0px;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+
+div.menu-monkey-town {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  z-index: 3;
+}
+
+#exit {
+  position: absolute;
+  height: 70px;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  top: 85%;
+  left: 52%;
+  right: 5%;
+  border: 5px solid red;
+  border-radius: 16px;
+  background-color: black;
+}
+
+#overview-button {
+  position: absolute;
+  height: 70px;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  top: 85%;
+  left: 5%;
+  right: 52%;
+  border: 5px solid blue;
+  border-radius: 16px;
+  background-color: black;
+}
+
+div.OVHouse1 {
+  position: absolute;
+  left: 30%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 10px solid green;
+  border-radius: 32px;
+  visibility: hidden;
+}
+
+#boxHouse1 {
+  position: absolute;
+  left: -48%;
+  right: 103%;
+  top: -2%;
+  bottom: 68%;
+  margin: 3px;
+  background-color: transparent;
+  border: 10px solid;
+  border-radius: 32px;
+}
+
+#range1 {
+  font-size: 40px;
+  position: absolute;
+  left: 25%;
+  right:25%;
+  top: 16%;
+  background-color: lightgreen;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#buy1 {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 28%;
+  font-size: 22px;
+  background-color: lightgreen;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+div.overview {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 1%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 16px solid black;
+  border-radius: 30px;
+  visibility: hidden;
+}
+
+div.okay {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 20%;
+  border-bottom: 16px solid black;
+  border-radius: 0px;
+  overflow-y: scroll;
+}
+
+div.town-hall-overview {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 8px solid darkgrey;
+  border-radius: 30px;
+}
+
+div.house-1-overview {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 55%;
+  bottom: 0%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 8px solid darkgrey;
+  border-radius: 30px;
+}
+
+#lvlHouse1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 0%;
+  bottom: 35%;
+  left: 70%;
+  right: 0%;
+  padding: 5px;
+  margin: 3px;
+  background-color: green;
+  border: 6px solid;
+  border-radius: 8px;
+}
+
+#meterHouse1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  top: 65%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 0px;
+  margin: 3px;
+  background-color: green;
+  border: 6px solid;
+  border-radius: 8px;
+}
+
+#goHouse1 {
+  font-size: 30px;
+  color: green;
+  position: absolute;
+  left: 0%;
+  right: 30%;
+  top: 30%;
+  bottom: 35%;
+  margin: 3px;
+  background-color: black;
+  border: 6px solid blue;
+  border-radius: 8px;
+}
+
+#titleHouse1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  top: 0%;
+  bottom: 70%;
+  left: 0%;
+  right: 30%;
+  padding: 0px;
+  margin: 3px;
+  background-color: lightgreen;
+  border: 5px solid;
+  border-radius: 8px;
+}
+
+div.house-2-overview {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 105%;
+  bottom: -50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 8px solid darkgrey;
+  border-radius: 30px;
+}
+
+#lvlHouse2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 0%;
+  bottom: 35%;
+  left: 70%;
+  right: 0%;
+  padding: 5px;
+  margin: 3px;
+  background-color: green;
+  border: 6px solid;
+  border-radius: 8px;
+}
+
+#meterHouse2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  top: 65%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 0px;
+  margin: 3px;
+  background-color: green;
+  border: 6px solid;
+  border-radius: 8px;
+}
+
+#goHouse2 {
+  font-size: 30px;
+  color: green;
+  position: absolute;
+  left: 0%;
+  right: 30%;
+  top: 30%;
+  bottom: 35%;
+  margin: 3px;
+  background-color: black;
+  border: 6px solid blue;
+  border-radius: 8px;
+}
+
+#titleHouse2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  top: 0%;
+  bottom: 70%;
+  left: 0%;
+  right: 30%;
+  padding: 0px;
+  margin: 3px;
+  background-color: lightgreen;
+  border: 5px solid;
+  border-radius: 8px;
+}
+
+#close-overview-button {
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 82%;
+  bottom: 2%;
+  background-color: black;
+  border: 5px solid red;
+  border-radius: 16px;
+}
+
+div.bG {
+  position: absolute;
+  height: 1223px;
+  width: 1823px;
+  left: -504px;
+  top: -204px;
+  overflow: hidden;
+}
+  
+#map{
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  height: 1223px;
+  width: 1823px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  overflow: hidden;
+}
+
+#town-hall {
+  text-align: center;
+  padding: 3px;
+  font-size: 30px;
+  position: absolute;
+  left: 42.8%;
+  top: 24%;
+  height: 44px;
+  background-color: transparent;
+  border: 5px solid red;
+  border-radius: 12px;
+}
+
+#upgrades-menu-closer {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: 30%;
+  right: 30%;
+  height: 90px;
+  background-color: tomato;
+  border: 5px solid red;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+div.special-upgrade-screen {
+  background-color: #414141;
+  position: absolute;
+  top: 0%;
+  bottom: 58%;
+  left: 0%;
+  right: 40%;
+  z-index: 2;
+  border: 5px solid green;
+  border-radius: 16px;
+  margin: 8px;
+}
+
+#special-upgrade-info {
+ font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  background-color: #f1ee8e;
+  position: absolute;
+  top: 0%;
+  bottom: 50%;
+  left: 0%;
+  right: 0%;
+  border: 3px solid #e6cc00;
+  border-radius: 8px;
+  margin: 3px;
+}
+
+#special-upgrade-buy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: #f1ee8e;
+  position: absolute;
+  top: 50%;
+  bottom: 20%;
+  left: 0%;
+  right: 0%;
+  border: 3px solid #e6cc00;
+  border-radius: 8px;
+  margin: 3px;
+}
+
+#special-upgrade-title {
+  color: #f1ee8e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  left: 38px;
+  bottom: -2%;
+  padding: 8px;
+  margin: 0px;
+}
+
+div.not-enough {
+  background-color: black;
+  position: absolute;
+  left: -2%;
+  right:-2%;
+  top: -2.5%;
+  bottom: -2.5%;
+  z-index: 1000;
+  border: 10px solid red;
+  border-radius: 16px;
+  visibility: hidden;
+}
+
+#no-money {
+  background-color: red;
+  margin: 16px;
+  font-size: 75px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0px;
+  border-radius: 16px;
+}
+
+#ok {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  text-align: center;
+  margin: 16px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  border: 8px solid white;
+  border-radius: 16px;
+}
+
+div.purchase-done {
+   background-color: black;
+  position: absolute;
+  left: -2%;
+  right:-2%;
+  top: -2.5%;
+  bottom: -2.5%;
+  z-index: 1000;
+  border: 10px solid blue;
+  border-radius: 16px;
+  visibility: hidden;
+}
+
+#purchase-info {
+  background-color: red;
+  margin: 16px;
+  font-size: 54px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0px;
+  border-radius: 16px;
+}
+
+#ok2 {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  text-align: center;
+  margin: 16px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  border: 8px solid white;
+  border-radius: 16px;
+}
